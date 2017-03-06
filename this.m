@@ -1,8 +1,19 @@
 classdef this < handle
 % OO Matlab Batcher
 %
+% D          = this;
+% D.SetFiles = 'myfunction_with_files_for_processing_as_output.m'
+%
+% D.addjob({'job_name','job_function.m'});
+% D.SelectJob('job_name');
+% D.where = 'cluster' or 'local'
+% D.Run
 %
 %
+% - requires docluster to submit jobs: 
+% https://github.com/alexandershaw4/ClusterMatlabSubmit/archive/master.zip
+%
+% AS2017
     
     properties
         Files
